@@ -1,0 +1,102 @@
+//Common
+@import "common/extend.scss";
+@import "common/fonts.scss";
+@import "common/minxi.scss";
+@import "common/variables.scss";
+@import "common/global.scss";
+
+//layout
+@import "layouts/main.scss";
+
+// Responsive
+@import "layouts/responsive.scss";
+@font-face {
+  font-family: "vazir";
+}
+
+// custom styles
+body {
+  font-family: "vazir" !important;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+  background: #fff !important;
+}
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d4aa70;
+  border-radius: 100px;
+}
+.row > * {
+  flex-shrink: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-top: var(--bs-gutter-y) !important;
+}
+.d-rtl {
+  direction: rtl;
+}
+.d-flex {
+  display: flex !important;
+  justify-content: center !important;
+}
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.glass-bg {
+  display: block;
+  position: absolute;
+
+  z-index: 999999999999 !important;
+
+  width: 100%;
+  height: 100%;
+}
+.container {
+  max-height: 628px !important;
+  background-color: rgba(95, 150, 201, 0.733) !important;
+  border-radius: 13px;
+}
+p.desc {
+  padding-bottom: 28px !important;
+  color: #999 !important;
+  line-height: 1.92 !important;
+}
+.actions ul {
+  justify-content: center !important;
+  direction: ltr !important;
+  display: flex !important;
+}
+.content {
+  padding: 340px 0 76px 0 !important;
+  position: relative !important;
+}
+.step-current {
+  color: #353535 !important;
+  top: 20px !important;
+  font-size: 18px !important;
+}
+
+.signup-content,
+.actions ul,
+.actions ul li a {
+  display: flex !important;
+  display: -webkit-flex !important;
+  max-height: 622px !important;
+}
+// canves styles
+canvas {
+  width: 100%;
+  height: 100vh;
+  z-index: 0 !important;
+}
