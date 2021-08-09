@@ -139,3 +139,46 @@ window.addEventListener("resize", function (event) {
   gl.viewport(0, 0, window.innerWidth, window.innerHeight);
   locationOfResolution = gl.getUniformLocation(program, "u_resolution");
 });
+
+// ***********p tag js
+var btn = document.getElementById("btn");
+var quote = document.getElementById("quote");
+var author = document.getElementById("author");
+var tweet = document.getElementById("tweet");
+//getting elements b IDs
+
+btn.addEventListener("click", function () {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      var data = JSON.parse(xhttp.responseText)[0];
+      /*The API Im using returns an array composed of 1 element, so need to use [0]*/
+      quote.innerHTML = data.content;
+      author.innerHTML = data.title;
+    }
+  };
+  xhttp.open(
+    "GET",
+    "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&a=" +
+      Math.random(),
+    true
+  );
+  //Math.random() to prevent it from getting cached.
+  xhttp.send();
+}); //end of code for generating a random quote
+
+tweet.addEventListener("click", function () {
+  var txt = quote.firstChild.innerHTML;
+  /*API adds <p> tag, so use firstChild to select the tag, and then use innerHTML to get the content inside it.*/
+  var by = author.innerHTML;
+  window.open(
+    "https://twitter.com/intent/tweet?text=" +
+      txt +
+      " " +
+      "-" +
+      " " +
+      "By" +
+      " " +
+      by
+  );
+});

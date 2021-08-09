@@ -1,550 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="colorlib.com" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up Form</title>
+    <!-- bootstrap and cus  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/30.0.0/font-face.css"
+      integrity="sha512-ZHFuHiK3EA1uh2tx7nB0j9HyXR/IAFW24KVNFGjY8QIjtDKHmcowjUyObXF40wYrG25+kECHEbH8rL+HbvRwYA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/30.0.0/font-face.min.css"
+      integrity="sha512-FOp1/1tT19/xw6wkob5zvDLQUPFTgmYy6fXIKpo/nvZyMiyhe72YNhgSRlrE/FLS8OgYFONMGvqazSVLbO2/6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Line Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/scss/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="/assets/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap"
-    rel="stylesheet" />
-  <!-- Line Awesome CDN Link -->
-  <link rel="stylesheet"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
-    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-</head>
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
 
-<body>
-  <div class="row">
-    <div class="col-md-10 col-sm-10 mx-auto">
-      <div class="glass-bg">
-        <!-- step form start by mikh -->
-        <div class="row d-flex justofy-content-center align-items-center vh-100">
-          <section class="main-section">
-            <form class="pure-steps">
-              <input type="radio" name="steps-control" id="step-1" checked />
-              <input type="radio" name="steps-control" id="step-2" />
-              <input type="radio" name="steps-control" id="step-3" />
-              <input type="radio" name="steps-control" id="step-4" />
-              <input type="radio" name="steps-control" id="step-5" />
-              <header class="d-flex">
-                <h2 class="d-rtl">مرحله</h2>
-              </header>
-              <ol class="pure-steps_balls pseudo-model flexy-item between">
-                <li class="pure-steps_balls-item pseudo-model">
-                  <span title="Step 1" class="pure-steps_balls-item_ball pseudo-model"></span>
-                </li>
-                <li class="pure-steps_balls-item pseudo-model">
-                  <span title="Step 2" class="pure-steps_balls-item_ball pseudo-model"></span>
-                </li>
-                <li class="pure-steps_balls-item pseudo-model">
-                  <span title="Step 3" class="pure-steps_balls-item_ball pseudo-model"></span>
-                </li>
-                <li class="pure-steps_balls-item pseudo-model">
-                  <span title="Step 4" class="pure-steps_balls-item_ball pseudo-model"></span>
-                </li>
-                <li class="pure-steps_balls-item pseudo-model">
-                  <span title="Step 5" class="pure-steps_balls-item_ball pseudo-model"></span>
-                </li>
-              </ol>
-              <div class="pure-steps_list">
-                <div class="
-                        pure-steps_list-step
-                        flexy-item flexy-column
-                        between
-                      ">
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
+  <body class="d-rtl">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 mx-auto">
+        <div class="glass-bg">
+          <div class="main">
+            <div class="container">
+              <div class="signup-content">
+                <div class="signup-desc">
+                  <div class="signup-desc-content">
+                    <h2>زبدگان <span>وب</span></h2>
+                    <p class="title">
+                      سیستم محاسبه ی قیمت خدمات مجموعه زبدگان وب جهت راحتی بیشتر
+                      شما مشتریان عزیز ... .
+                    </p>
+                    <p class="desc">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون
+                    </p>
+                    <img
+                      src="images/signup-img.jpg"
+                      alt=""
+                      class="signup-img"
+                    />
+                  </div>
+                </div>
+                <div class="signup-form-conent">
+                  <form
+                    method="POST"
+                    id="signup-form"
+                    class="signup-form"
+                    enctype="multipart/form-data"
+                  >
+                    <h3></h3>
+                    <fieldset>
+                      <span class="step-current">مرحله 1 / 4</span>
+                      <div class="row">
+                        <div class="col-md-12 mx-auto">
+                          <div id="container">
+                            <i class="fa fa-quote-left"></i>
+                            <i class="fa fa-quote-right"></i>
 
-                  <div class="row">
-                    <div class="col-md-4 mx-auto">
-
-                      <div class="subscribe-card d-flex flex-column justify-content-center align-items-center">
-                        <img src="https://image.flaticon.com/icons/svg/616/616489.svg" alt="star img"
-                          class="img-fluid star-img">
-                        <h3 class="subscribe-heading">Thank you for subscribing!</h3>
-                        <p class="subscribe-text">You have successfully subscribed to our list.We will let you know when
-                          we launch.</p>
-
-
-                        <div class="phone_number_input">
-                          <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="شماره تماس" name="name" id='name'
-                              required />
-                            <label for="name" class="form__label">شماره تماس</label>
+                            <div id="quote" style="font-size: 20px">
+                              با سلام
+                            </div>
+                            <div id="quote">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                              صنعت چاپ و با استفاده از طراحان گرافیک است.
+                              چاپگرها و متون بلکه روزنامه
+                            </div>
+                            <div id="author"></div>
                           </div>
                         </div>
-
-                        <div
-                          class="mt-5 col-12 d-flex flex-column flex-md-row justify-content-center align-items-center justify-content-md-center align-items-md-start  p-0">
-                          <button class="preferences-btn">Update your preferences</button>
-
-
-                        </div>
-
-
                       </div>
-
-
-
-
-
-                    </div>
-                  </div>
-
-                  <div class="row ">
-
-
-                    <div class="col-4 mx-auto">
-
-                      <div class="pure-steps_nav">
-                        <ol class="flexy-item between">
-                          <li class="preferences-btn">
-                            <label for="step-1">مرحله 1</label>
-                          </li>
-                          <li class="preferences-btn">
-                            <label for="step-2">مرحله 2</label>
-                          </li>
-                          <li class="preferences-btn">
-                            <label for="step-3">مرحله 3</label>
-                          </li>
-                          <li class="preferences-btn">
-                            <label for="step-4">مرحله 4</label>
-                          </li>
-                          <li class="preferences-btn">
-                            <label for="step-5">مرحله 5</label>
-                          </li>
-                        </ol>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-
-
-                  <!-- /header -->
-                </div>
-                <div class="
-                        pure-steps_list-step
-                        flexy-item flexy-column
-                        between
-                      ">
-                  <header>
-                    <h3 class="animate__animated mt-3 animate__bounce float-r">
-                      :انتخاب نوع سایت
-                    </h3>
-                  </header>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="radio-buttons">
-                        <label class="custom-radio">
-                          <input type="radio" name="radio" checked />
-                          <span class="radio-btn"><i class="las la-check"></i>
-                            <div class="hobbies-icon">
-                              <i class="lab la-wordpress"></i>
-                              <h3>وردپرس</h3>
-                            </div>
-                          </span>
-                        </label>
-                        <label class="custom-radio">
-                          <input type="radio" name="radio" />
-                          <span class="radio-btn"><i class="las la-check"></i>
-                            <div class="hobbies-icon">
-                              <i class="las la-pen-fancy"></i>
-                              <h3>طراحی اختصاصی</h3>
-                            </div>
-                          </span>
-                        </label>
-                        <label class="custom-radio">
-                          <input type="radio" name="radio" />
-                          <span class="radio-btn"><i class="las la-check"></i>
-                            <div class="hobbies-icon">
-                              <i class="las la-mobile-alt"></i>
-                              <h3>اپلیکیشن</h3>
-                            </div>
-                          </span>
-                        </label>
-                        <label class="custom-radio">
-                          <input type="radio" name="radio" />
-                          <span class="radio-btn"><i class="las la-check"></i>
-                            <div class="hobbies-icon">
-                              <i class="las la-tablet-alt"></i>
-                              <h3>وب اپلیکیشن</h3>
-                            </div>
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- /header -->
-                </div>
-                <div class="
-                        pure-steps_list-step
-                        flexy-item flexy-column
-                        between
-                      ">
-                  <header>
-                    <h3 class="animate__animated mt-3 animate__bounce float-r">
-                      :انتخاب قسمتهای سایت یا اپلیکیشن
-                    </h3>
-                  </header>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="services-container">
-                        <input type="checkbox" id="_checkbox" />
-                        <label class="label1" for="_checkbox">
-                          <div id="tick_mark"></div>
-                        </label>
-                        <div class="top-container">
-                          <div class="service-card">
-                            <img draggable="false" src="https://unsplash.it/300/200?image=125" alt="" />
-                            <div class="content">
-                              <div class="title">سایدبار</div>
-                              <div class="small_title">تخصصی</div>
-                            </div>
-                            <div class="desc">
-                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                              از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                              چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                              سطرآنچنان که لازم است و برای شرایط فعلی
-                              تکنولوژی مورد نیاز
-                              <button id="open-popup-modal" class="btn btn-info">
-                                نمایش نمونه
-                              </button>
+                      <div class="row m-t-130">
+                        <div class="col-md-12 mx-auto">
+                          <div class="login-box">
+                            <div class="user-box">
+                              <input type="text" name="" required="" />
+                              <label>شماره تلفن همراه</label>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </fieldset>
 
-                  <!-- /header -->
-                </div>
-                <div class="
-                        pure-steps_list-step
-                        flexy-item flexy-column
-                        between
-                      ">
-                  <header>
-                    <h3 class="animate__animated mt-3 animate__bounce float-r">
-                      :انتخاب خدمات سایت یا اپلیکیشن
-                    </h3>
-                  </header>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <fieldset class="checkbox-group">
-                        <div class="checkbox">
-                          <label class="checkbox-wrapper">
-                            <input type="checkbox" class="checkbox-input" />
-                            <span class="checkbox-tile">
-                              <span class="checkbox-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                                  viewBox="0 0 256 256">
-                                  <rect width="256" height="256" fill="none"></rect>
-                                  <circle cx="96" cy="144.00002" r="10"></circle>
-                                  <circle cx="160" cy="144.00002" r="10"></circle>
-                                  <path
-                                    d="M74.4017,80A175.32467,175.32467,0,0,1,128,72a175.32507,175.32507,0,0,1,53.59754,7.99971"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path
-                                    d="M181.59717,176.00041A175.32523,175.32523,0,0,1,128,184a175.32505,175.32505,0,0,1-53.59753-7.99971"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path
-                                    d="M155.04392,182.08789l12.02517,24.05047a7.96793,7.96793,0,0,0,8.99115,4.20919c24.53876-5.99927,45.69294-16.45908,61.10024-29.85086a8.05225,8.05225,0,0,0,2.47192-8.38971L205.65855,58.86074a8.02121,8.02121,0,0,0-4.62655-5.10908,175.85294,175.85294,0,0,0-29.66452-9.18289,8.01781,8.01781,0,0,0-9.31925,5.28642l-7.97318,23.91964"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path
-                                    d="M100.95624,182.08757l-12.02532,24.0508a7.96794,7.96794,0,0,1-8.99115,4.20918c-24.53866-5.99924-45.69277-16.459-61.10006-29.85069a8.05224,8.05224,0,0,1-2.47193-8.38972L50.34158,58.8607a8.0212,8.0212,0,0,1,4.62655-5.1091,175.85349,175.85349,0,0,1,29.66439-9.18283,8.0178,8.0178,0,0,1,9.31924,5.28642l7.97318,23.91964"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                </svg>
-                              </span>
-                              <span class="checkbox-label">SEO</span>
-                            </span>
-                          </label>
+                    <h3></h3>
+                    <fieldset>
+                      <span class="step-current">مرحله 2 / 4</span>
+                      <div class="row">
+                        <div class="col-md-12 mx-auto">
+                          <div id="container">
+                            <i class="fa fa-quote-left"></i>
+                            <i class="fa fa-quote-right"></i>
+
+                            <div id="quote" style="font-size: 20px">
+                              انتخاب نوع سایت یا اپلیکیشن
+                            </div>
+                            <div id="quote">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                              صنعت چاپ و با استفاده از طراحان گرافیک است.
+                              چاپگرها و متون بلکه روزنامه
+                            </div>
+                            <div id="author"></div>
+                          </div>
                         </div>
-                        <div class="checkbox">
-                          <label class="checkbox-wrapper">
-                            <input type="checkbox" class="checkbox-input" checked />
-                            <span class="checkbox-tile">
-                              <span class="checkbox-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                                  viewBox="0 0 256 256">
-                                  <rect width="256" height="256" fill="none"></rect>
-                                  <polygon points="56 100 56 168 128 236 128 168 200 168 56 32 200 32 200 100 56 100"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></polygon>
-                                </svg>
-                              </span>
-                              <span class="checkbox-label">دامنه</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label class="checkbox-wrapper">
-                            <input type="checkbox" class="checkbox-input" />
-                            <span class="checkbox-tile">
-                              <span class="checkbox-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                                  viewBox="0 0 256 256">
-                                  <rect width="256" height="256" fill="none"></rect>
-                                  <polygon points="72 40 184 40 240 104 128 224 16 104 72 40" fill="none"
-                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></polygon>
-                                  <polygon points="177.091 104 128 224 78.909 104 128 40 177.091 104" fill="none"
-                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></polygon>
-                                  <line x1="16" y1="104" x2="240" y2="104" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></line>
-                                </svg>
-                              </span>
-                              <span class="checkbox-label">هاست</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label class="checkbox-wrapper">
-                            <input type="checkbox" class="checkbox-input" />
-                            <span class="checkbox-tile">
-                              <span class="checkbox-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                                  viewBox="0 0 256 256">
-                                  <rect width="256" height="256" fill="none"></rect>
-                                  <circle cx="128" cy="128" r="40" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></circle>
-                                  <rect x="36" y="36" width="184" height="184" rx="48" stroke-width="12"
-                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                                  </rect>
-                                  <circle cx="180" cy="75.99998" r="10"></circle>
-                                </svg>
-                              </span>
-                              <span class="checkbox-label">Instagram</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label class="checkbox-wrapper">
-                            <input type="checkbox" class="checkbox-input" />
-                            <span class="checkbox-tile">
-                              <span class="checkbox-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                                  viewBox="0 0 256 256">
-                                  <rect width="256" height="256" fill="none"></rect>
-                                  <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></circle>
-                                  <path
-                                    d="M71.0247,205.27116a159.91145,159.91145,0,0,1,136.98116-77.27311q8.09514,0,15.99054.78906"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path
-                                    d="M188.0294,53.09083A159.68573,159.68573,0,0,1,64.00586,111.99805a160.8502,160.8502,0,0,1-30.15138-2.83671"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path
-                                    d="M85.93041,41.68508a159.92755,159.92755,0,0,1,78.99267,138.00723,160.35189,160.35189,0,0,1-4.73107,38.77687"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                </svg>
-                              </span>
-                              <span class="checkbox-label">Dribbble</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label class="checkbox-wrapper">
-                            <input type="checkbox" class="checkbox-input" />
-                            <span class="checkbox-tile">
-                              <span class="checkbox-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                                  viewBox="0 0 256 256">
-                                  <rect width="256" height="256" fill="none"></rect>
-                                  <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></circle>
-                                  <g>
-                                    <path d="M179.1333,108.32931a112.19069,112.19069,0,0,0-102.3584.04859" fill="none"
-                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="12"></path>
-                                    <path d="M164.29541,136.71457a79.94058,79.94058,0,0,0-72.68359.04736" fill="none"
-                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="12"></path>
-                                    <path d="M149.47217,165.07248a47.97816,47.97816,0,0,0-43.03662.04736" fill="none"
-                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="12"></path>
-                                  </g>
-                                </svg>
-                              </span>
-                              <span class="checkbox-label">Spotify</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label class="checkbox-wrapper">
-                            <input type="checkbox" class="checkbox-input" />
-                            <span class="checkbox-tile">
-                              <span class="checkbox-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                                  viewBox="0 0 256 256">
-                                  <rect width="256" height="256" fill="none"></rect>
-                                  <circle cx="162" cy="128" r="34" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></circle>
-                                  <path d="M128,94V26.00089H94a34,34,0,0,0,0,68Z" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></path>
-                                  <path d="M128,161.99911V94H94a34,34,0,0,0,0,68Z" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></path>
-                                  <path d="M128,94V26.00089h34a34,34,0,0,1,0,68Z" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></path>
-                                  <path d="M128,161.99911v34.00044A34,34,0,1,1,94,162Z" fill="none"
-                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                </svg>
-                              </span>
-                              <span class="checkbox-label">Figma</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label class="checkbox-wrapper">
-                            <input type="checkbox" class="checkbox-input" checked />
-                            <span class="checkbox-tile">
-                              <span class="checkbox-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                                  viewBox="0 0 256 256">
-                                  <rect width="256" height="256" fill="none"></rect>
-                                  <path
-                                    d="M80,56.00005h24a0,0,0,0,1,0,0v72a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24V80a24,24,0,0,1,24-24Z"
-                                    transform="translate(184.00005 24.00003) rotate(90)" fill="none"
-                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path d="M128,80H104a24,24,0,0,1-24-24V56a24,24,0,0,1,24-24h0a24,24,0,0,1,24,24Z"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path
-                                    d="M152,32.00007h24a0,0,0,0,1,0,0v72a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24V56a24,24,0,0,1,24-24Z"
-                                    transform="translate(304 160.00011) rotate(180)" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></path>
-                                  <path d="M176,128V104a24,24,0,0,1,24-24h0a24,24,0,0,1,24,24v0a24,24,0,0,1-24,24Z"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path
-                                    d="M176,104.00005h24a0,0,0,0,1,0,0v72a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24V128A24,24,0,0,1,176,104.00005Z"
-                                    transform="translate(23.99995 328.00003) rotate(-90)" fill="none"
-                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path d="M128,176h24a24,24,0,0,1,24,24v0a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24Z"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path
-                                    d="M104,128h24a0,0,0,0,1,0,0v72a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24V152A24,24,0,0,1,104,128Z"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                  <path d="M80,128v24a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24v0a24,24,0,0,1,24-24Z"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="12"></path>
-                                </svg>
-                              </span>
-                              <span class="checkbox-label">Slack</span>
-                            </span>
-                          </label>
-                        </div>
-                      </fieldset>
-                    </div>
-                  </div>
-                  <!-- /header -->
-                </div>
-                <div class="
-                        pure-steps_list-step
-                        flexy-item flexy-column
-                        between
-                      ">
-                  <header>
-                    <div class="segment">
-                      <h1 class="mb-4">با تشکر</h1>
-                      <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                        صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
-                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                        لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                        باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
-                        آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با
-                        نرم افزارها شناخت بیشتری را برای طراحان رایانه ای
-                        علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
-                        ایجاد کرد. در این صورت می توان امید داشت که تمام و
-                        دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به
-                        پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
-                        اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
-                        اساسا مورد استفاده قرار گیرد.
-                      </p>
-                    </div>
-                  </header>
-                  <!-- /header -->
-                  <div class="flexy-item_child pure-steps_list-step_content">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <section class="price-card text-center">
-                          <div class="container">
-                            <div class="row">
-                              <h3 class="
-                                      animate__animated
-                                      mt-3
-                                      animate__bounce
-                                      float-r
-                                    ">
-                                :قیمت نهایی
-                              </h3>
-                              <div class="
-                                      card-t
-                                      mx-auto
-                                      my-4
-                                      col-lg-6 col-sm-6
-                                     
-                                    ">
-                                <h3>فاکتور نهایی</h3>
-                                <p>Lorem Ipsum</p>
-                                <p>150,000<span>تومان</span></p>
-                                <ul class="list-unstyled">
-                                  <li>Lorem Ipsum</li>
-                                  <li>Lorem Ipsum</li>
-                                  <li>Lorem Ipsum</li>
-                                  <li>Lorem Ipsum</li>
-                                  <li>Lorem Ipsum</li>
-                                </ul>
-                                <button>تایید خرید</button>
+                      </div>
+                      
+                        <div class="radio-buttons">
+                          <label class="custom-radio">
+                            <input type="radio" name="radio" checked />
+                            <span class="radio-btn"
+                              ><i class="las la-check"></i>
+                              <div class="hobbies-icon">
+                                <i class="lab la-wordpress"></i>
+                                <p class="text-nowrap">وردپرس</h2>
                               </div>
+                            </span>
+                          </label>
+                          <label class="custom-radio">
+                            <input type="radio" name="radio" />
+                            <span class="radio-btn"
+                              ><i class="las la-check"></i>
+                              <div class="hobbies-icon">
+                                <i class="las la-pen-fancy"></i>
+                                <p class="text-nowrap">طراحی اختصاصی</p>
+                              </div>
+                            </span>
+                          </label>
+                          <label class="custom-radio">
+                            <input type="radio" name="radio" />
+                            <span class="radio-btn"
+                              ><i class="las la-check"></i>
+                              <div class="hobbies-icon">
+                                <i class="las la-mobile-alt"></i>
+                                <p class="text-nowrap">اپلیکیشن</p>
+                              </div>
+                            </span>
+                          </label>
+                          <label class="custom-radio">
+                            <input type="radio" name="radio" />
+                            <span class="radio-btn"
+                              ><i class="las la-check"></i>
+                              <div class="hobbies-icon">
+                                <i class="las la-tablet-alt"></i>
+                                <p class="text-nowrap">وب اپلیکیشن</p>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      
+                    </fieldset>
+
+                    <h3></h3>
+                    <fieldset>
+                      <span class="step-current">مرحله 3 / 4</span>
+                      <div class="row">
+                        <div class="col-md-12 mx-auto">
+                          <div id="container">
+                            <i class="fa fa-quote-left"></i>
+                            <i class="fa fa-quote-right"></i>
+
+                            <div id="quote" style="font-size: 20px">
+                              انتخاب نوع خدمات سایت یا اپلیکیشن
                             </div>
+                            <div id="quote">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                              صنعت چاپ و با استفاده از طراحان گرافیک است.
+                              چاپگرها و متون بلکه روزنامه
+                            </div>
+                            <div id="author"></div>
                           </div>
-                        </section>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                      
+                    </fieldset>
+
+                    <h3></h3>
+                    <fieldset>
+                      <span class="step-current">مرحله4 / 4</span>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="confirm_password"
+                          id="confirm_password"
+                          required
+                        />
+                        <label for="confirm_password"
+                          >Confirm your password</label
+                        >
+                        <span
+                          toggle="#confirm_password"
+                          class="zmdi zmdi-eye field-icon toggle-password"
+                        ></span>
+                      </div>
+                    </fieldset>
+                  </form>
                 </div>
-
-
-
-
-
               </div>
-
-            </form>
-          </section>
+            </div>
+          </div>
         </div>
-
-        <!-- sterp ends by mikh -->
       </div>
+      <canvas id="glscreen"></canvas>
     </div>
-    <canvas id="glscreen"></canvas>
-  </div>
 
-  <script id="2d-fragment-shader" type="x-shader/x-fragment">
+    <!-- JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script id="2d-fragment-shader" type="x-shader/x-fragment">
       // <![CDATA[
         #ifdef GL_ES
         precision highp float;
@@ -655,41 +376,29 @@
           st.xy *= 0.4;
           float r = snoise(vec3(st.x,st.y,u_time * 0.1));
 
-      	if(r > 0.60){
-      		color = color5;
-      	} else if(r > 0.20){
-      		color = color4;
-      	} else if(r > -0.20){
-      		color = color3;
-      	} else if(r > -0.60){
-      		color = color2;
-      	} else if(r > -2.0){
-      		color = color1;
-      	}
+          if(r > 0.60){
+              color = color5;
+          } else if(r > 0.20){
+              color = color4;
+          } else if(r > -0.20){
+              color = color3;
+          } else if(r > -0.60){
+              color = color2;
+          } else if(r > -2.0){
+              color = color1;
+          }
 
           gl_FragColor = vec4(color,1.0);
         }
       // ]]>
     </script>
-  <script id="2d-vertex-shader" type="x-shader/x-vertex">
+    <script id="2d-vertex-shader" type="x-shader/x-vertex">
       // <![CDATA[
-      	attribute vec2 a_position;
-      	void main() {
-      		gl_Position = vec4(a_position, 0, 1);
-      	}
-      	// ]]>
+          attribute vec2 a_position;
+          void main() {
+              gl_Position = vec4(a_position, 0, 1);
+          }
+          // ]]>
     </script>
-
-  <!-- scrips -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <script src="/assets/script.js"></script>
-</body>
-
+  </body>
 </html>
