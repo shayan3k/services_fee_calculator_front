@@ -182,3 +182,4 @@ tweet.addEventListener("click", function () {
       by
   );
 });
+// ***************slider cards for services
