@@ -12,11 +12,19 @@
 @import "layouts/responsive.scss";
 
 // custom styles
-body {
+* {
   font-family: "vazir" !important;
+}
+body {
   overflow-y: auto !important;
   overflow-x: hidden;
   background: #fff !important;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: calc(100% - 40px);
+    max-width: 100%;
+  }
 }
 body::-webkit-scrollbar {
   width: 16px;
@@ -31,13 +39,28 @@ body::-webkit-scrollbar-thumb {
   background-color: #d4aa70;
   border-radius: 100px;
 }
+.cus-style-1 {
+  position: relative;
+  min-height: 37vh;
+  display: flex;
+}
+
 .row > * {
   flex-shrink: 0 !important;
-  width: 100% !important;
+
   max-width: 100% !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-top: var(--bs-gutter-y) !important;
+}
+fieldset {
+  border: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  min-height: 557px !important;
+}
+.m-b-166 {
+  margin-bottom: 166px !important;
 }
 .m-t-130 {
   margin-top: 130px !important;
@@ -56,6 +79,10 @@ body::-webkit-scrollbar-thumb {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+.overflow-full {
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+}
 .overflow-cus {
   overflow-x: auto !important;
   overflow-y: hidden;
@@ -73,11 +100,12 @@ body::-webkit-scrollbar-thumb {
   background-color: #d4aa70;
   border-radius: 100px;
 }
+
 .glass-bg {
   display: block;
   position: absolute;
 
-  z-index: 999999999999 !important;
+  z-index: 99999 !important;
 
   width: 100%;
   height: 100%;
@@ -85,8 +113,35 @@ body::-webkit-scrollbar-thumb {
 .signup-form {
   padding: 0px 43px !important;
 }
+#wrapper::-webkit-scrollbar {
+  width: 16px;
+}
+
+#wrapper::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+#wrapper::-webkit-scrollbar-thumb {
+  background-color: #d4aa70;
+  border-radius: 100px;
+}
+// new
+.price-card::-webkit-scrollbar {
+  width: 16px;
+}
+
+.price-card::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.price-card::-webkit-scrollbar-thumb {
+  background-color: #d4aa70;
+  border-radius: 100px;
+}
 .container {
-  max-height: 628px !important;
+  // max-height: 628px !important;
   background-color: rgba(95, 150, 201, 0.733) !important;
   border-radius: 13px;
 }
@@ -119,7 +174,7 @@ p.desc {
 .actions ul li a {
   display: flex !important;
   display: -webkit-flex !important;
-  max-height: 622px !important;
+  // max-height: 622px !important;
 }
 
 // canves styles
@@ -132,7 +187,7 @@ canvas {
 
 .login-box {
   position: absolute;
-  top: 100%;
+
   left: 50%;
   width: 400px;
   padding: 40px;
@@ -187,7 +242,8 @@ canvas {
 //=== Drawing effect
 .actions ul li {
   margin-left: 20px !important;
-  margin-top: 126px !important;
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
 }
 @mixin btn-border-drawing(
   $color: #ccc,
@@ -797,7 +853,7 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
   width: 90%;
-  z-index: 10;
+  z-index: 999;
 }
 
 .inside-page__btn::before {
@@ -860,7 +916,6 @@ body {
 
 /* Container to hold all cards in one place */
 .card-area {
-  align-items: center;
   display: flex;
   flex-wrap: nowrap;
   height: 100%;
@@ -1091,7 +1146,7 @@ body {
   content: "";
   display: block;
   position: relative;
-  z-index: 100;
+  z-index: 999999999;
 }
 .option-input.radio {
   border-radius: 50%;
@@ -1100,3 +1155,251 @@ body {
   border-radius: 50%;
 }
 // **************slider cards for services
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*--------------------
+Shop Card
+---------------------*/
+$gray: #eee;
+$white: #fff;
+$black: #333;
+$active: #e74c3c;
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: block;
+  fill: rgba($black, 0.5);
+  margin-right: 20px;
+  transition: all 0.2s ease-out;
+}
+
+.icon.active {
+  fill: $active;
+}
+
+.icon.big {
+  width: 64px;
+  height: 64px;
+  fill: rgba($black, 0.5);
+}
+
+#wrapper {
+  width: 70%;
+  height: 90%;
+  position: absolute;
+  border-radius: 13px;
+  margin: auto;
+  background-color: $white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#left-side {
+  height: 70%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      line-height: 34px;
+      color: rgba($black, 0.5);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        color: rgba($black, 1);
+        transition: all 0.2s ease-out;
+      }
+
+      &:hover > .icon {
+        fill: $black;
+      }
+    }
+
+    li.active {
+      color: rgba($black, 1);
+
+      &:hover > .icon {
+        fill: $active;
+      }
+    }
+  }
+}
+
+#border {
+  height: 288px;
+  width: 1px;
+  background-color: rgba($black, 0.2);
+
+  #line.one {
+    width: 5px;
+    height: 54px;
+    background-color: $active;
+    margin-left: -2px;
+    margin-top: 35px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  #line.two {
+    width: 5px;
+    height: 54px;
+    background-color: $active;
+    margin-left: -2px;
+    margin-top: 89px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  #line.three {
+    width: 5px;
+    height: 54px;
+    background-color: $active;
+    margin-left: -2px;
+    margin-top: 143px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  #line.four {
+    width: 5px;
+    height: 54px;
+    background-color: $active;
+    margin-left: -2px;
+    margin-top: 197px;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+#right-side {
+  height: 300px;
+  width: 75%;
+  overflow: hidden;
+
+  #first,
+  #second,
+  #third,
+  #fourth {
+    position: absolute;
+    height: 300px;
+    width: 75%;
+    transition: all 0.6s ease-in-out;
+    margin-top: -350px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #first.active,
+  #second.active,
+  #third.active,
+  #fourth.active {
+    margin-top: 0px;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+  }
+}
+// price cards %%%%%%%%%%%%%%%%%%%%%%
+:root {
+  --first-color: #08526d;
+  --second-color: #1877c0;
+}
+section.price-card div.card-t {
+  background-color: #fff;
+  margin-right: 34px;
+  padding: 0;
+  box-shadow: 7px 7px 16px 0px #ddd, -7px -7px 16px 0px #ddd;
+  margin-top: 50px;
+}
+section.price-card div.card-t:last-of-type {
+  margin-right: 0;
+}
+section.price-card div.card-t h3 {
+  color: var(--first-color);
+  padding-top: 50px;
+}
+section.price-card div.card-t p:first-of-type {
+  color: #757575;
+  margin-bottom: 25px;
+}
+section.price-card div.card-t p:last-of-type {
+  color: var(--first-color);
+  background-color: #f7f7f7;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 8px;
+}
+section.price-card div.card-t p span {
+  font-size: 15px;
+}
+section.price-card div.card-t ul {
+  margin-top: 30px;
+}
+section.price-card div.card-t ul li {
+  color: #757575;
+  margin-bottom: 20px;
+}
+section.price-card div.card-t button {
+  background-color: var(--second-color);
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 10px 45px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+section.price-card div.card-t:not(hover) {
+  transition: all 0.5s ease-in-out;
+}
+section.price-card div.card-t:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+section.price-card div.card-t:not(hover) p:last-of-type {
+  transition: all 0.5s ease-in-out;
+}
+section.price-card div.card-t:hover p:last-of-type {
+  background-color: var(--second-color);
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+section.price-card .card-t button:hover {
+  background-color: var(--first-color);
+}
+.price-card {
+  height: 274px;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.custom-container {
+  height: 100%;
+}
