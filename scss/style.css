@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   font-family: "vazir" !important;
 }
@@ -7,6 +6,15 @@
 .fas {
   font-family: "Font Awesome 5 Pro" !important;
   font-weight: 900;
+}
+
+.fa-check:before {
+  content: "\f00c";
+  color: #2fff2f !important;
+}
+
+.lab {
+  font-family: "Line Awesome Brands" !important;
 }
 
 /* @extend display-flex; */
@@ -237,6 +245,10 @@ list-type-ulli, .actions ul {
   /* Safari, Android, iOS */
 }
 
+.clear {
+  clear: both;
+}
+
 a:focus,
 a:active {
   text-decoration: none;
@@ -280,22 +292,6 @@ textarea:focus {
   -ms-box-shadow: none !important;
 }
 
-input[type=checkbox] {
-  appearance: checkbox !important;
-  -moz-appearance: checkbox !important;
-  -webkit-appearance: checkbox !important;
-  -o-appearance: checkbox !important;
-  -ms-appearance: checkbox !important;
-}
-
-input[type=radio] {
-  appearance: radio !important;
-  -moz-appearance: radio !important;
-  -webkit-appearance: radio !important;
-  -o-appearance: radio !important;
-  -ms-appearance: radio !important;
-}
-
 input:-webkit-autofill {
   box-shadow: 0 0 0 30px transparent inset;
   -moz-box-shadow: 0 0 0 30px transparent inset;
@@ -313,7 +309,7 @@ h2 {
   font-size: 27px;
   color: #222;
   font-weight: 800;
-  font-family: 'Muli';
+  font-family: "Muli";
   margin: 0px;
   padding-bottom: 65px;
 }
@@ -327,7 +323,7 @@ body {
   line-height: 1.6;
   color: #222;
   font-weight: 400;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin: 0px;
   background: #222;
 }
@@ -581,10 +577,11 @@ body::-webkit-scrollbar-thumb {
 
 .cus-style-1 {
   position: relative;
-  min-height: 37vh;
+  min-height: 45vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 23% !important;
 }
 
 .row > * {
@@ -743,16 +740,24 @@ p.desc {
   display: -webkit-flex !important;
 }
 
+@media screen and (max-width: 768px) {
+  canvas {
+    width: 100%;
+    height: 260% !important;
+    z-index: 0 !important;
+  }
+}
+
 canvas {
   width: 100%;
-  height: 100vh;
+  height: 118%;
   z-index: 0 !important;
 }
 
 .login-box {
   position: absolute;
   left: 50%;
-  width: 400px;
+  width: 80%;
   padding: 40px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -762,6 +767,12 @@ canvas {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .m-t-130 {
+    margin-top: 70px !important;
+  }
 }
 
 .login-box h2 {
@@ -790,7 +801,7 @@ canvas {
 .login-box .user-box label {
   position: absolute;
   top: 0;
-  left: 197px;
+  left: auto;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
@@ -802,7 +813,7 @@ canvas {
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
   top: -20px;
-  left: 197px;
+  left: auto;
   color: #7c7cdd;
   font-size: 12px;
 }
@@ -887,7 +898,7 @@ canvas {
   width: 100%;
   margin: 35px auto;
   margin-top: 66px;
-  padding: 50px 100px 50px 100px;
+  padding: 50px 10px 50px 10px;
   border-radius: 10px 50px;
 }
 
@@ -963,6 +974,7 @@ i {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  margin-top: 60px;
 }
 
 .custom-radio input {
@@ -1421,101 +1433,6 @@ body {
           box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
 }
 
-@-webkit-keyframes click-wave {
-  0% {
-    height: 25px;
-    width: 25px;
-    opacity: 0.35;
-    position: relative;
-  }
-  100% {
-    height: 200px;
-    width: 200px;
-    margin-left: -80px;
-    margin-top: -80px;
-    opacity: 0;
-  }
-}
-
-@keyframes click-wave {
-  0% {
-    height: 25px;
-    width: 25px;
-    opacity: 0.35;
-    position: relative;
-  }
-  100% {
-    height: 200px;
-    width: 200px;
-    margin-left: -80px;
-    margin-top: -80px;
-    opacity: 0;
-  }
-}
-
-.option-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  position: relative;
-  top: 13.33333px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  -webkit-transition: all 0.15s ease-out 0s;
-  transition: all 0.15s ease-out 0s;
-  background: #cbd1d8;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  margin-right: 0.5rem;
-  outline: none;
-  position: relative;
-  z-index: 1000;
-}
-
-.option-input:hover {
-  background: #9faab7;
-}
-
-.option-input:checked {
-  background: #40e0d0;
-}
-
-.option-input:checked::before {
-  height: 25px;
-  width: 25px;
-  position: absolute;
-  content: "✔";
-  display: inline-block;
-  font-size: 26.66667px;
-  text-align: center;
-  line-height: 25px;
-}
-
-.option-input:checked::after {
-  -webkit-animation: click-wave 0.65s;
-  animation: click-wave 0.65s;
-  background: #40e0d0;
-  content: "";
-  display: block;
-  position: relative;
-  z-index: 999999999;
-}
-
-.option-input.radio {
-  border-radius: 50%;
-}
-
-.option-input.radio::after {
-  border-radius: 50%;
-}
-
 /*--------------------
 Shop Card
 ---------------------*/
@@ -1532,7 +1449,7 @@ li {
   height: 32px;
   display: block;
   fill: rgba(51, 51, 51, 0.5);
-  margin-right: 20px;
+  margin-bottom: 4px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -1586,15 +1503,12 @@ li {
 #left-side ul li {
   padding-top: 10px;
   padding-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 34px;
   color: rgba(51, 51, 51, 0.5);
   font-weight: 500;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  text-align: center !important;
 }
 
 #left-side ul li:hover {
@@ -1609,6 +1523,7 @@ li {
 
 #left-side ul li.active {
   color: #333333;
+  text-align: center !important;
 }
 
 #left-side ul li.active:hover > .icon {
@@ -1797,12 +1712,106 @@ section.price-card .card-t button:hover {
 }
 
 .price-card {
-  height: 274px;
+  height: 100%;
   overflow-y: auto !important;
   overflow-x: hidden !important;
+  margin-top: 10%;
 }
 
 .custom-container {
   height: 100%;
+}
+
+.c-custom-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: #df2929;
+  font-family: Indie Flower;
+  right: 23px;
+}
+
+.c-custom-checkbox svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0.2em;
+  width: 2em;
+  height: 2em;
+  border: 2px solid currentColor;
+}
+
+.c-custom-checkbox input[type="checkbox"] {
+  opacity: 0.00001;
+  width: 3em;
+  height: 1em;
+  position: inherit;
+  left: 0.5em;
+  top: 0.4em;
+}
+
+.c-custom-checkbox svg path {
+  -webkit-transition: stroke-dashoffset 0.4s linear;
+  transition: stroke-dashoffset 0.4s linear;
+}
+
+.c-custom-checkbox input[type="checkbox"]:checked + svg path {
+  stroke-dashoffset: 0;
+  stroke: currentColor;
+}
+
+.c-custom-checkbox input[type="checkbox"] + svg path {
+  stroke: #eee;
+}
+
+.c-custom-checkbox input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.c-custom-checkbox input[type="checkbox"]:focus + svg {
+  outline: 3px dotted gold;
+  outline-offset: 5px;
+}
+
+.c-custom-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
+  outline: none;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li {
+  color: #a7a7a7;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li span {
+  color: #414141;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li:hover {
+  background-color: #e4e4e4;
+  border-left: 5px solid #2ecc71;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  padding: 15px 0;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li:hover {
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li .fa {
+  padding: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */
