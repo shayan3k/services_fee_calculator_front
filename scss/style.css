@@ -1814,4 +1814,93 @@ section.price-card .card-t button:hover {
 #generic_price_table .generic_content .generic_feature_list ul li .fa {
   padding: 0 10px;
 }
+
+.wrapper1 {
+  position: relative;
+  -webkit-perspective: 40em;
+          perspective: 40em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  right: 64px;
+}
+
+.card6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1;
+  height: 80%;
+  width: 55%;
+  -webkit-transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+          transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+  background: rgba(249, 198, 26, 0.88);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 900;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
+  margin-right: 9px;
+}
+
+.card6 .enclosed {
+  background: #000;
+  line-height: 1;
+  color: #f9c61a;
+  padding: 0 5px;
+  display: inline-block;
+  -webkit-transform: translate(-1px, 1px) scale(0.75);
+          transform: translate(-1px, 1px) scale(0.75);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+}
+
+.wrapper1:before {
+  --bw: 9px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1;
+  content: "";
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  height: 80%;
+  width: 55%;
+  margin-top: calc(-1 * var(--bw));
+  margin-left: calc(-1 * var(--bw));
+  background: transparent;
+  -webkit-transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+          transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+  pointer-events: none;
+  border: var(--bw) solid #000;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.wrapper1:hover > div,
+.wrapper1:hover:before {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.wrapper1 > div,
+.wrapper1:before {
+  will-change: transform;
+  -webkit-transition: 0.3s -webkit-transform cubic-bezier(0.25, 0.46, 0.45, 1);
+  transition: 0.3s -webkit-transform cubic-bezier(0.25, 0.46, 0.45, 1);
+  transition: 0.3s transform cubic-bezier(0.25, 0.46, 0.45, 1);
+  transition: 0.3s transform cubic-bezier(0.25, 0.46, 0.45, 1), 0.3s -webkit-transform cubic-bezier(0.25, 0.46, 0.45, 1);
+}
 /*# sourceMappingURL=style.css.map */
