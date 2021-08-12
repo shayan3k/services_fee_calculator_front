@@ -1831,10 +1831,10 @@ section.price-card .card-t button:hover {
   -ms-grid-column: 1;
   grid-area: 1 / 1;
   height: 80%;
-  width: 55%;
+  width: 58%;
   -webkit-transform: translateX(10px) rotateY(25deg) rotateX(10deg);
           transform: translateX(10px) rotateY(25deg) rotateX(10deg);
-  background: rgba(249, 198, 26, 0.88);
+  background: #ffdf74;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1860,7 +1860,7 @@ section.price-card .card-t button:hover {
   background: #000;
   line-height: 1;
   color: #f9c61a;
-  padding: 0 5px;
+  padding: 7px 10px;
   display: inline-block;
   -webkit-transform: translate(-1px, 1px) scale(0.75);
           transform: translate(-1px, 1px) scale(0.75);
@@ -1877,7 +1877,7 @@ section.price-card .card-t button:hover {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   height: 80%;
-  width: 55%;
+  width: 58%;
   margin-top: calc(-1 * var(--bw));
   margin-left: calc(-1 * var(--bw));
   background: transparent;
