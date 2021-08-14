@@ -1577,7 +1577,6 @@ li {
 }
 
 #right-side {
-  height: 300px;
   width: 75%;
   overflow: hidden;
 }
@@ -1587,11 +1586,10 @@ li {
 #right-side #third,
 #right-side #fourth {
   position: absolute;
-  height: 300px;
   width: 75%;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
-  margin-top: -350px;
+  margin-top: -176px;
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1612,7 +1610,6 @@ li {
 #right-side #second.active,
 #right-side #third.active,
 #right-side #fourth.active {
-  margin-top: 0px;
   opacity: 1;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
@@ -1740,13 +1737,20 @@ section.price-card .card-t button:hover {
   border: 2px solid currentColor;
 }
 
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
 .c-custom-checkbox input[type="checkbox"] {
   opacity: 0.00001;
   width: 3em;
-  height: 1em;
+  height: 2em;
   position: inherit;
+  z-index: 99999999999999999999999999999999;
+  cursor: inherit;
   left: 0.5em;
-  top: 0.4em;
+  top: 1.4em;
 }
 
 .c-custom-checkbox svg path {
